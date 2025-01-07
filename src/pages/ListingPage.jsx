@@ -1,0 +1,11 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import annonces from '../../data/20Last.json';
+import Header from '../components/Header.jsx';
+import FocusImage from '../components/FocusImage.jsx';
+import NameAndLocation from '../components/NameAndLocation.jsx';
+import OwnerNameAndPhoto from '../components/OwnerNameAndPhoto.jsx';
+import Tags from '../components/Tags.jsx';
+import StarRating from '../components/StarRating.jsx';
+import ListingChoice from '../components/ListingChoice.jsx';
+import Footer from '../components/Footer.jsx';
