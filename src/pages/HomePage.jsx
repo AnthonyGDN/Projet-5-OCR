@@ -1,14 +1,20 @@
-import React from 'react';
+import React from 'react'; 
 import annonces from '../../data/20Last.json';
-import Header from '../components/Header.jsx';
-import Carousel from '../components/Carousel.jsx';
-import Gallery from '../components/Gallery.jsx';
-import ListingCard from '../components/ListingCard.jsx';
-import Footer from '../components/Footer.jsx';
+//import Header from '../components/Header.jsx';
+import Banner from '../components/Banner.jsx';
+//import Gallery from '../components/Gallery.jsx';
+import Card from '../components/Card.jsx';
+//import Footer from '../components/Footer.jsx';
 
+// HomePage functional component
 const HomePage = () => (
     <div>
-        <h1>Chez vous, partout et ailleurs</h1>
+        <Banner imageUrl="HomeBanner.png" title="Chez vous, partout et ailleurs" /> 
+        <div className="cards-container"> 
+            {annonces.map((annonce) => ( 
+                <Card key={annonce.id} annonce={annonce} /> // Chaque carte reçoit les données d'une annonce
+            ))}
+    </div>
     </div>
 );
 
