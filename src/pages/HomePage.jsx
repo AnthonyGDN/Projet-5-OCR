@@ -1,10 +1,12 @@
 import React from 'react'; 
+
 import annonces from '../../data/20Last.json';
-//import Header from '../components/Header.jsx';
-import Banner from '../components/Banner.jsx';
-//import Gallery from '../components/Gallery.jsx';
-import Card from '../components/Card.jsx';
-//import Footer from '../components/Footer.jsx';
+
+//import Header from '../components/Header/Header.jsx';
+import Banner from '../components/Banner/Banner.jsx';
+//import Gallery from '../components/Gallery/Gallery.jsx';
+import Card from '../components/Card/Card.jsx';
+//import Footer from '../components/Footer/Footer.jsx';
 
 // HomePage functional component
 const HomePage = () => (
@@ -14,7 +16,7 @@ const HomePage = () => (
             {annonces.map((annonce) => ( 
                 <Card key={annonce.id} annonce={annonce} /> // Chaque carte reçoit les données d'une annonce
             ))}
-    </div>
+        </div>
     </div>
 );
 

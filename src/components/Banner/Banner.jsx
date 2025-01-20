@@ -1,5 +1,5 @@
 import React from 'react'; // Import the React library to create the component
-import '../styles/Banner.scss'; // Import component specific styles
+import './Banner.scss'; // Import component specific styles
 
 // Banner Functional Component
 const Banner = ({ imageUrl, title }) => {
