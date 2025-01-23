@@ -1,2 +1,14 @@
-$primary-color: #ff6060;
-$secondary-color: #ffffff;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+// Application des styles globaux sur l'ensemble du document
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+

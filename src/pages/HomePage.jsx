@@ -8,9 +8,13 @@ import Card from '../components/Card/Card.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 //import Gallery from '../components/Gallery/Gallery.jsx';
 
+import '../styles/_variables.scss';
+
+
+
 // HomePage functional component
 const HomePage = () => (
-    <div>
+    <div className="homepage">
         <Header />
         <Banner imageUrl="HomeBanner.png" title="Chez vous, partout et ailleurs" /> 
         <div className="cards-container"> 
