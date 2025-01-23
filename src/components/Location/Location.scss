@@ -1,0 +1,16 @@
+.location {
+    margin: 20px 0;
+    text-align: left;
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff6060;
+        margin-bottom: 5px;
+    }
+
+    &__address {
+        font-size: 18px;
+        color: #555;
+    }
+}

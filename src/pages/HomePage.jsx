@@ -4,9 +4,9 @@ import annonces from '../../data/20Last.json';
 
 import Header from '../components/Header/Header.jsx';
 import Banner from '../components/Banner/Banner.jsx';
-//import Gallery from '../components/Gallery/Gallery.jsx';
 import Card from '../components/Card/Card.jsx';
 import Footer from '../components/Footer/Footer.jsx';
+//import Gallery from '../components/Gallery/Gallery.jsx';
 
 // HomePage functional component
 const HomePage = () => (
@@ -15,7 +15,7 @@ const HomePage = () => (
         <Banner imageUrl="HomeBanner.png" title="Chez vous, partout et ailleurs" /> 
         <div className="cards-container"> 
             {annonces.map((annonce) => ( 
-                <Card key={annonce.id} annonce={annonce} /> // Chaque carte reçoit les données d'une annonce
+                <Card key={annonce.id} annonce={annonce} /> //Each card receives data from an ad
             ))}
         </div>
         <Footer />

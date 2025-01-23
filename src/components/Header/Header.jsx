@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import './Header.scss'; 
 
+// Functional component to display the header
 const Header = () => (
 <header className="header">
         <img src="../../public/LOGO.png" alt="Kasa Logo" className="header__logo" />

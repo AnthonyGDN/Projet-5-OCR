@@ -1,7 +1,8 @@
-import React from 'react'; // Import the React library to create the component
-import './Banner.scss'; // Import component specific styles
+import React from 'react'; 
 
-// Banner Functional Component
+import './Banner.scss'; 
+
+// Functional component to display a banner with an image and optional title
 const Banner = ({ imageUrl, title }) => {
     return (
         <div className="Banner"> 
@@ -11,4 +12,4 @@ const Banner = ({ imageUrl, title }) => {
     );
 };
 
-export default Banner; // Export the component for use elsewhere
+export default Banner;

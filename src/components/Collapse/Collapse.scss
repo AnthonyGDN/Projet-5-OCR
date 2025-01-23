@@ -1,0 +1,36 @@
+.collapse {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &__header {
+        background-color: #ff6060;
+        color: #fff;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon {
+        transition: transform 0.3s ease;
+    }
+
+    &__icon.open {
+        transform: rotate(180deg);
+    }
+
+    &__content {
+        background-color: #f7f7f7;
+        padding: 15px;
+        font-size: 16px;
+        color: #333;
+        border-top: 1px solid #ddd;
+    }
+}

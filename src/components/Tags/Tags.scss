@@ -1,0 +1,16 @@
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    &__item {
+        background-color: #ff6060;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
