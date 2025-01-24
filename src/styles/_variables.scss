@@ -12,3 +12,60 @@
     gap: 40px; 
 }
 
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.about-page__content {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    margin: 40px auto; 
+}
+
+.listing-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+.listing-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+    flex-wrap: wrap;  
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;  
+        margin-left: 5%; 
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
+        gap: 10px;
+        padding-right: 5%;  
+    }
+}
+
+.collapses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.collapse {
+    flex: 1;  
+    max-width: 40%;  
+    min-width: 300px; 
+}
+
+}

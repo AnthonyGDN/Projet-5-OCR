@@ -5,6 +5,8 @@ import Banner from '../components/Banner/Banner.jsx';
 import Collapse from '../components/Collapse/Collapse.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 
+import '../styles/_variables.scss';
+
 // AboutPage component to display the "About" section of the website
 const AboutPage = () => {
     // Array containing the sections to be displayed with their titles and content
@@ -30,7 +32,7 @@ const AboutPage = () => {
     return (
         <div className="about-page">
             <Header />
-            <Banner imageUrl="HomeBanner.png" title="" />
+            <Banner imageUrl="AboutBanner.png" title="" />
             <div className="about-page__content">
                 {collapses.map((item, index) => (
                     <Collapse key={index} title={item.title} content={item.content} />

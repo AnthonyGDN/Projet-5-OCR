@@ -1,21 +1,22 @@
 .owner {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;  
+    gap: 5px;  
     text-align: right;
 
     &__name {
-        font-size: 16px;
-        font-weight: bold;
-        color: #ff6060;
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: #ff5a5f;
+        margin-bottom: 5px;
     }
 
     &__picture {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #ff6060;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;  
+        object-fit: cover;  
+        border: 2px solid #ccc;
     }
-
 }

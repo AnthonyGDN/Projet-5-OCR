@@ -25,7 +25,7 @@ const ListingPage = () => {
     }
 
     return (
-        <div>
+        <div className="listing-page">
             <Header />
             <Carousel images={annonce.pictures} />
             <div className="listing-info">
@@ -38,7 +38,7 @@ const ListingPage = () => {
                     <Rating rating={parseInt(annonce.rating)} />
                 </div>
             </div>
-            <div className="collapses">
+            <div className="collapses-container">
                 <Collapse title="Description" content={annonce.description} />
                 <Collapse title="Équipements" content={annonce.equipments} />
             </div>

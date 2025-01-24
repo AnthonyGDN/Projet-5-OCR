@@ -1,7 +1,6 @@
 .collapse {
-    width: 100%;
-    max-width: 500px;
-    margin: 10px 0;
+    width: 70%;  
+    margin: 0 auto;  
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -10,7 +9,7 @@
         background-color: #ff6060;
         color: #fff;
         padding: 15px;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: bold;
         cursor: pointer;
         display: flex;
@@ -20,10 +19,11 @@
 
     &__icon {
         transition: transform 0.3s ease;
+        transform: rotate(-90deg);
     }
 
     &__icon.open {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
 
     &__content {

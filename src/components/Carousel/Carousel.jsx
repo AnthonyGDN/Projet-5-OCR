@@ -19,23 +19,28 @@ const Carousel = ({ images }) => {
 
     return (
         <div className="carousel">
-            <button className="carousel__arrow carousel__arrow--left" onClick={prevSlide}>
-                &#10094;
-            </button>
             <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel__image" />
-            <button className="carousel__arrow carousel__arrow--right" onClick={nextSlide}>
-                &#10095;
-            </button>
-            <div className="carousel__counter">
-                {currentIndex + 1}/{images.length}
-            </div>
+            
+            {images.length > 1 && (
+                <>
+                    <button className="carousel__arrow carousel__arrow--left" onClick={prevSlide}>
+                        &#10094;
+                    </button>
+                    <button className="carousel__arrow carousel__arrow--right" onClick={nextSlide}>
+                        &#10095;
+                    </button>
+                    <div className="carousel__counter">
+                        {currentIndex + 1}/{images.length}
+                    </div>
+                </>
+            )}
         </div>
     );
 };
 
 // Defining prop types for validation
 Carousel.propTypes = {
-    images: PropTypes.arrayOf(PropTypes.string).isRequired, // images should be an array of strings and is required
+    images: PropTypes.arrayOf(PropTypes.string).isRequired, 
 };
 
 export default Carousel;
