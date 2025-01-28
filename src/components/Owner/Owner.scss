@@ -20,3 +20,29 @@
         border: 2px solid #ccc;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .owner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+        gap: 5px;  
+        text-align: right;
+    
+        &__name {
+            font-size: 12px;
+            font-weight: normal;
+            color: #ff5a5f;
+            margin-bottom: 5px;
+        }
+    
+        &__picture {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;  
+            object-fit: cover;  
+            border: 2px solid #ccc;
+        }
+    }
+}

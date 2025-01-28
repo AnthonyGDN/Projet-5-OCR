@@ -15,8 +15,8 @@ const Owner = ({ name, picture }) => {
 
 // Defining prop types to validate incoming props
 Owner.propTypes = {
-    name: PropTypes.string.isRequired, // The owner's name must be a string and is required
-    picture: PropTypes.string.isRequired, // The owner's picture URL must be a string and is required
+    name: PropTypes.string.isRequired, 
+    picture: PropTypes.string.isRequired, 
 };
 
 export default Owner;

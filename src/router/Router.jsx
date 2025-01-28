@@ -6,7 +6,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 
 // AppRouter component that handles the application's routing
 function AppRouter() {
-    return ( // The different possible routes
+    return ( 
         <Router> 
             <Routes> 
                 <Route path="/" element={<HomePage />} />

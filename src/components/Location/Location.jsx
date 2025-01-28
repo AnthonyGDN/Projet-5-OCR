@@ -15,8 +15,8 @@ const Location = ({ title, location }) => {
 
 // Defining prop types to validate incoming props
 Location.propTypes = {
-    title: PropTypes.string.isRequired, // Title must be a string and is required
-    location: PropTypes.string.isRequired, // Location must be a string and is required
+    title: PropTypes.string.isRequired, 
+    location: PropTypes.string.isRequired, 
 };
 
 export default Location;

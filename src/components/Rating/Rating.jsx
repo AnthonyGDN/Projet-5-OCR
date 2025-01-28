@@ -22,7 +22,7 @@ const Rating = ({ rating }) => {
 
 // Defining prop types to validate incoming props
 Rating.propTypes = {
-    rating: PropTypes.number.isRequired, // The rating value must be a number and is required
+    rating: PropTypes.number.isRequired, 
 };
 
 export default Rating;

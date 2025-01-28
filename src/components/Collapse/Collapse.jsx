@@ -25,10 +25,10 @@ const Collapse = ({ title, content }) => {
 
 // Defining prop types to ensure correct usage of the component
 Collapse.propTypes = {
-    title: PropTypes.string.isRequired, // Title must be a string and is required
+    title: PropTypes.string.isRequired, 
     content: PropTypes.oneOfType([
-        PropTypes.string,               // Content can be a string
-        PropTypes.arrayOf(PropTypes.string), // Or an array of strings
+        PropTypes.string,              
+        PropTypes.arrayOf(PropTypes.string), 
     ]).isRequired,
 };
 

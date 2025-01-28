@@ -18,7 +18,7 @@ const Tags = ({ tags }) => {
 
 // Defining prop types to validate incoming props
 Tags.propTypes = {
-    tags: PropTypes.arrayOf(PropTypes.string).isRequired, // Tags must be an array of strings and is required
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired, 
 };
 
 export default Tags;

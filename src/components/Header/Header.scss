@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    margin-bottom: 20px;
 
     &__logo {
         max-width: 250px;
@@ -28,5 +29,41 @@
 
     &__link--active {
         text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        margin-bottom: 20px;
+    
+        &__logo {
+            max-width: 145px;
+        }
+    
+        &__nav {
+            display: flex;
+            gap: 20px;
+        }
+    
+        &__link {
+            color: #000;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: normal;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    
+        &__link--active {
+            text-decoration: underline;
+        }
     }
 }

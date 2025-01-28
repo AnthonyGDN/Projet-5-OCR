@@ -14,7 +14,7 @@ const HomePage = () => (
         <Banner imageUrl="HomeBanner.png" title="Chez vous, partout et ailleurs" /> 
         <div className="cards-container"> 
             {annonces.map((annonce) => ( 
-                <Card key={annonce.id} annonce={annonce} /> //Each card receives data from an ad
+                <Card key={annonce.id} annonce={annonce} /> 
             ))}
         </div>
         <Footer />
