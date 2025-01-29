@@ -28,6 +28,7 @@
 
     &__content {
         max-height: 0;
+        overflow: hidden;
         background-color: #f7f7f7;
         font-size: 16px;
         color: #333;
@@ -72,6 +73,7 @@
     
         &__content {
             max-height: 0;
+            overflow: hidden;
             background-color: #f7f7f7;
             font-size: 16px;
             color: #333;

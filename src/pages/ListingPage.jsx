@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { useParams, Navigate } from 'react-router-dom';
 
 import annonces from '../../data/20Last.json';
 
@@ -16,12 +16,13 @@ import Footer from '../components/Footer/Footer.jsx';
 const ListingPage = () => {
     // Get the 'id' parameter from the URL
     const { id } = useParams();
+    
     // Find the matching listing based on the 'id'
     const annonce = annonces.find(item => item.id === id);
 
-    // Display an error message if the listing is not found
+    // If the URL is not correct redirect to 404 page
     if (!annonce) {
-        return <p>Annonce non trouvée</p>;
+        return <Navigate to="/404" replace />;
     }
 
     return (
