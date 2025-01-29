@@ -7,17 +7,21 @@ import './Rating.scss';
 const Rating = ({ rating }) => {
     // Define the maximum number of stars to be displayed
     const maxStars = 5;
-    // Create an array of filled stars based on the rating value
-    const filledStars = Array.from({ length: rating }, (_, index) => (
-        <span key={index} className="star star--filled">★</span>
-    ));
 
-    // Create an array of empty stars to fill the remaining slots
-    const emptyStars = Array.from({ length: maxStars - rating }, (_, index) => (
-        <span key={index + rating} className="star star--empty">★</span>
-    ));
-
-    return <div className="rating">{[...filledStars, ...emptyStars]}</div>;
+    return (
+        <div className="rating">
+            {[...Array(maxStars)].map((_, index) => (
+                <img 
+                    key={index} 
+                    src={index < rating ? 
+                        "/public/Vector.png" : 
+                        "/public/Vector2.png"} 
+                    alt="star" 
+                    className={index < rating ? 'star star--orange' : 'star star--gray'}
+                />
+            ))}
+        </div>
+    );
 };
 
 // Defining prop types to validate incoming props

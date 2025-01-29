@@ -4,18 +4,6 @@
     gap: 5px;
 }
 
-.star {
-    font-size: 36px;
-
-    &--filled {
-        color: #ff6060;
-    }
-
-    &--empty {
-        color: #e3e3e3;
-    }
-}
-
 @media screen and (max-width: 768px) {
 
     .rating {
@@ -25,14 +13,7 @@
     }
     
     .star {
-        font-size: 18px;
-    
-        &--filled {
-            color: #ff6060;
-        }
-    
-        &--empty {
-            color: #e3e3e3;
-        }
+        width: 18px;
+        height: 18px;
     }
 }

@@ -1,12 +1,24 @@
 .owner {
     display: flex;
-    flex-direction: row;
-    align-items: center;  
-    gap: 5px;  
-    text-align: right;
+    align-items: center;
 
-    &__name {
-        font-size: 1.2rem;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    &__firstname {
+        font-size: 18px;
+        font-weight: normal;
+        color: #ff5a5f;
+        margin-bottom: 5px;
+    }
+
+    &__lastname {
+        font-size: 18px;
         font-weight: normal;
         color: #ff5a5f;
         margin-bottom: 5px;
@@ -25,12 +37,24 @@
 
     .owner {
         display: flex;
-        flex-direction: row;
-        align-items: center;  
-        gap: 5px;  
-        text-align: right;
+        align-items: center;
     
-        &__name {
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 10px;
+            text-align: right;
+        }
+    
+        &__firstname {
+            font-size: 12px;
+            font-weight: normal;
+            color: #ff5a5f;
+            margin-bottom: 5px;
+        }
+    
+        &__lastname {
             font-size: 12px;
             font-weight: normal;
             color: #ff5a5f;

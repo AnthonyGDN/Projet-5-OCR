@@ -5,9 +5,14 @@ import './Owner.scss';
 
 // Functional component to display the owner's name and profile picture
 const Owner = ({ name, picture }) => {
+    const [firstName, lastName] = name.split(' ');
+
     return (
         <div className="owner">
-            <p className="owner__name">{name}</p>
+            <div className="owner__info">
+                <p className="owner__firstname">{firstName}</p>
+                <p className="owner__lastname">{lastName}</p>
+            </div>
             <img src={picture} alt={name} className="owner__picture" />
         </div>
     );

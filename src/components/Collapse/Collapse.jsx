@@ -17,8 +17,10 @@ const Collapse = ({ title, content }) => {
             <div className="collapse__header" onClick={toggleCollapse}>
                 <span>{title}</span>
                 <span className={`collapse__icon ${isOpen ? 'open' : ''}`}>&#x203A;</span>
-                </div>
-            {isOpen && <div className="collapse__content">{Array.isArray(content) ? content.join(', ') : content}</div>}
+            </div>
+            <div className={`collapse__content ${isOpen ? 'open' : ''}`}>
+                {Array.isArray(content) ? content.join(', ') : content}
+            </div>
         </div>
     );
 };

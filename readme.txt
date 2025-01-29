@@ -1,0 +1,2 @@
+To launch the site, open "git bash" with a right click in the "kasa" folder, then enter the command "npm run dev". 
+This will display several information including "Local" with a link displayed, copy and paste this link into your browser to access the site.
