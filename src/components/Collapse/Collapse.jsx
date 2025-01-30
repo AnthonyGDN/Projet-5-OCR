@@ -19,7 +19,9 @@ const Collapse = ({ title, content }) => {
                 <span className={`collapse__icon ${isOpen ? 'open' : ''}`}>&#x203A;</span>
             </div>
             <div className={`collapse__content ${isOpen ? 'open' : ''}`}>
-                {Array.isArray(content) ? content.join(', ') : content}
+                <div className="collapse__text">
+                    {Array.isArray(content) ? content.join(', ') : content}
+                </div>
             </div>
         </div>
     );

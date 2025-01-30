@@ -33,12 +33,23 @@
         font-size: 16px;
         color: #333;
         border-top: 1px solid #ddd;
-        transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
     }
 
     &__content.open {
         max-height: 500px;
         opacity: 1;
+        transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    }
+
+    &__text {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.5s ease-in-out, transform 0.55s ease-in-out;
+    }
+
+    &__content.open &__text {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -78,12 +89,23 @@
             font-size: 16px;
             color: #333;
             border-top: 1px solid #ddd;
-            transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
         }
 
         &__content.open {
             max-height: 500px;
             opacity: 1;
+            transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
+        }
+    
+        &__text {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.5s ease-in-out, transform 0.55s ease-in-out;
+        }
+    
+        &__content.open &__text {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }
