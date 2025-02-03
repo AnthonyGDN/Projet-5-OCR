@@ -41,7 +41,16 @@ const ListingPage = () => {
             </div>
             <div className="collapses-container">
                 <Collapse title="Description" content={annonce.description} />
-                <Collapse title="Équipements" content={annonce.equipments} />
+                <Collapse 
+                    title="Équipements" 
+                    content={
+                        <div style={{ display: "flex", flexDirection: "column" }}>
+                            {annonce.equipments.map((item, index) => (
+                                <span key={index}>{item}</span>
+                            ))}
+                        </div>
+                    } 
+                />
             </div>
             <Footer />
         </div>
