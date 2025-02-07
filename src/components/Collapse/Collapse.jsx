@@ -32,7 +32,8 @@ Collapse.propTypes = {
     title: PropTypes.string.isRequired, 
     content: PropTypes.oneOfType([
         PropTypes.string,              
-        PropTypes.arrayOf(PropTypes.string), 
+        PropTypes.arrayOf(PropTypes.string),
+        PropTypes.node,
     ]).isRequired,
 };
 
